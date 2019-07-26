@@ -1,8 +1,8 @@
- 
+ <!-- https://github.com/Nealyang/PersonalBlog/issues/48 -->
  * 1.<a href="#title1" id="title1n">记住密码操作cookie</a>
  * 2.<a href="./commonality/正则表达式.md" >正则表达式</a>
  * 3.<a href="#title2" id="title2n">JavaScript 复杂判断的更优雅写法</a>
- * 4.<a href="" >正则表达式</a>
+ * 4.<a href="https://github.com/Miboweixin/Only-the-Brave/tree/master/designs/src" >js设计模式</a>
  * 5.
 
 
@@ -176,8 +176,8 @@ const onButtonClick = (status)=>{
 }
 
 ```
-## 这样写用到了es6里的Map对象，是不是更爽了？Map对象和Object对象有什么区别呢？
+### 这样写用到了es6里的Map对象，是不是更爽了？Map对象和Object对象有什么区别呢？
 
-### 1.一个对象通常都有自己的原型，所以一个对象总有一个"prototype"键。<br>
-### 2.一个对象的键只能是字符串或者Symbols，但一个Map的键可以是任意值。<br>
-### 3.你可以通过size属性很容易地得到一个Map的键值对个数，而对象的键值对个数只能手动确认。<br>
+#### 1.一个对象通常都有自己的原型，所以一个对象总有一个"prototype"键。<br>
+#### 2.一个对象的键只能是字符串或者Symbols，但一个Map的键可以是任意值。<br>
+#### 3.你可以通过size属性很容易地得到一个Map的键值对个数，而对象的键值对个数只能手动确认。<br>
