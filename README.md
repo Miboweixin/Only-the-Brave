@@ -187,3 +187,55 @@ const onButtonClick = (status)=>{
 #### 2.一个对象的键只能是字符串或者Symbols，但一个Map的键可以是任意值。<br>
 #### 3.你可以通过size属性很容易地得到一个Map的键值对个数，而对象的键值对个数只能手动确认。<br>
 >
+
+
+      systemBranch: [
+        { name: "姓名", stage: "realname", forms: "" },
+        { name: "手机号", stage: "phone", forms: "" },
+        { name: "性别", stage: "sex", forms: "" },
+        { name: "所属园所", type: "leave", stage: "branchName", forms: "" },
+        { name: "工号", stage: "code", forms: "" },
+        { name: "员工状态", stage: "status", forms: "", type: "statay" },
+        { name: "角色", type: "status", stage: "roleName", forms: "" },
+        { name: "操作权限", type: "diction", stage: "branchName", forms: "" }
+	   { name: "姓名", stage: "realname", forms: "" },
+        { name: "手机号", stage: "phone", forms: "" },
+        { name: "性别", stage: "sex", forms: "" },
+        { name: "所属园所", type: "leave", stage: "branchName", forms: "" },
+        { name: "工号", stage: "code", forms: "" },
+        { name: "员工状态", stage: "status", forms: "", type: "statay" },
+        { name: "角色", type: "status", stage: "roleName", forms: "" },
+        { name: "操作权限", type: "diction", stage: "branchName", forms: "" }
+	   { name: "姓名", stage: "realname", forms: "" },
+        { name: "手机号", stage: "phone", forms: "" },
+        { name: "性别", stage: "sex", forms: "" },
+        { name: "所属园所", type: "leave", stage: "branchName", forms: "" },
+        { name: "工号", stage: "code", forms: "" },
+        { name: "员工状态", stage: "status", forms: "", type: "statay" },
+        { name: "角色", type: "status", stage: "roleName", forms: "" },
+        { name: "操作权限", type: "diction", stage: "branchName", forms: "" }
+	   { name: "姓名", stage: "realname", forms: "" },
+        { name: "手机号", stage: "phone", forms: "" },
+        { name: "性别", stage: "sex", forms: "" },
+        { name: "所属园所", type: "leave", stage: "branchName", forms: "" },
+        { name: "工号", stage: "code", forms: "" },
+        { name: "员工状态", stage: "status", forms: "", type: "statay" },
+        { name: "角色", type: "status", stage: "roleName", forms: "" },
+        { name: "操作权限", type: "diction", stage: "branchName", forms: "" }
+      ],
+      
+      
+       this.systemData.forEach(item => {
+         for (let a in data) {
+            if (item.stage === a) {
+              item.forms = data[a];    // 进行回显
+            }
+         }
+       })
+      //传给后台 
+       this.listData.forEach(item => {
+        arrys[item.stage] = item.forms;
+        pledge = "1";
+      });
+      
+      
